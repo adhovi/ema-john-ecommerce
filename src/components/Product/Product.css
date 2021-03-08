@@ -1,0 +1,11 @@
+.my-card {
+  border-radius: 20px;
+}
+.my-card img {
+  width: 70%;
+  margin: 0 auto;
+}
+.my-title {
+  height: 170px;
+  color: blue;
+}
