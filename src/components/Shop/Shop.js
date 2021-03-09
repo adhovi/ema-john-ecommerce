@@ -45,7 +45,7 @@ const Shop = () => {
     <div className="container">
       <Filter setProducts={setProducts}></Filter>
       <div className="row">
-        <div className="col-md-9 col-sm-8 col-7">
+        <div className="col-lg-9 col-sm-7 col-8">
           <div className="row">
             {products.map((product) => (
               <Product
@@ -56,7 +56,7 @@ const Shop = () => {
             ))}
           </div>
         </div>
-        <div className="col-md-3 col-sm-4 col-5">
+        <div className="col-lg-3 col-sm-5 col-4">
           <Cart cart={cart}>
             <Link to="/review">
               <button className="btn btn-dark">Order Review</button>

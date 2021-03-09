@@ -39,7 +39,7 @@ const Review = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-9 col-sm-8 col-7">
+        <div className="col-md-8 col-sm-8 col-8">
           {placedOrder && placedOrderText}
           {cart.map((pd) => (
             <ReviewItem
@@ -49,7 +49,7 @@ const Review = () => {
             ></ReviewItem>
           ))}
         </div>
-        <div className="col-md-3 col-sm-4 col-5">
+        <div className="col-md-4 col-sm-4 col-4">
           <Cart cart={cart}>
             <Link to="/review">
               <button onClick={placeOrder} className="btn btn-dark">

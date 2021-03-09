@@ -24,3 +24,23 @@ table td:last-child {
   border-top: 1px solid gray;
   margin-top: 5px;
 }
+@media (max-width: 768px) {
+  .cart table,
+  .total-row {
+    font-size: 0.8rem;
+  }
+  .cart h3,
+  .cart p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .cart table,
+  .total-row {
+    font-size: 0.7rem;
+  }
+  .cart h3,
+  .cart p {
+    font-size: 1rem;
+  }
+}

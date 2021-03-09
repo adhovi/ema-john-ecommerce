@@ -4,17 +4,19 @@ import "./Product.css";
 const Product = (props) => {
   const { img, name, seller, price, stock, quantity } = props.product;
   return (
-    <div className="col-md-6 col-lg-4">
+    <div className="col-lg-6 col-xl-4">
       <div className="card m-2 p-4 my-card">
         <img className="card-img-top" src={img} alt={name} />
         <div className="card-body mt-3">
-          <h6 className="card-title my-title">{name}</h6>
+          <h6 className="card-title my-title text-center text-sm-start">
+            {name}
+          </h6>
           <div className="card-text">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex flex-column flex-sm-row justify-content-between text-center text-sm-start">
               <p>By: {seller}</p>
               <p>Price: {price}</p>
             </div>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex flex-column flex-sm-row justify-content-between text-center text-sm-start">
               <p className="text-danger">
                 Items Left: {stock - (quantity || 0)}
               </p>
